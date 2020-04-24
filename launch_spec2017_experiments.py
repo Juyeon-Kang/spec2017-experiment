@@ -72,7 +72,7 @@ disk_image = Artifact.registerArtifact(
 
 linux_repo = Artifact.registerArtifact(
     command = '''
-    	git clone git clone --branch v4.19.83 --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/;
+    	git clone --branch v4.19.83 --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/;
     	mv linux linux-4.19.83
     ''',
     typ = 'git repo',
